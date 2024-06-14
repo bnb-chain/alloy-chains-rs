@@ -236,8 +236,10 @@ pub enum NamedChain {
 
     Degen = 666666666,
 
+    #[strum(to_string = "opbnb-mainnet")]
     #[cfg_attr(feature = "serde", serde(alias = "opbnb-mainnet"))]
     OpBNBMainnet = 204,
+    #[strum(to_string = "opbnb-testnet")]
     #[cfg_attr(feature = "serde", serde(alias = "opbnb-testnet"))]
     OpBNBTestnet = 5611,
 }
