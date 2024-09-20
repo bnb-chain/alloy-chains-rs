@@ -5,6 +5,177 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.32](https://github.com/alloy-rs/chains/releases/tag/v0.1.32) - 2024-09-19
+
+### Features
+
+- Add is_ethereum ([#90](https://github.com/alloy-rs/chains/issues/90))
+
+### Miscellaneous Tasks
+
+- Move is_* helpers to `NamedChain` ([#91](https://github.com/alloy-rs/chains/issues/91))
+- Import enum with glob instead of as C ([#89](https://github.com/alloy-rs/chains/issues/89))
+
+## [0.1.31](https://github.com/alloy-rs/chains/releases/tag/v0.1.31) - 2024-09-13
+
+### Miscellaneous Tasks
+
+- Release 0.1.31
+
+### Other
+
+- Immutable zkEVM and Immutable zkEVM testnet ([#88](https://github.com/alloy-rs/chains/issues/88))
+
+## [0.1.30](https://github.com/alloy-rs/chains/releases/tag/v0.1.30) - 2024-09-06
+
+### Features
+
+- Add gravity alpha mainnet and sepolia testnet ([#86](https://github.com/alloy-rs/chains/issues/86))
+
+### Miscellaneous Tasks
+
+- Release 0.1.30
+- Rustmft
+
+## [0.1.29](https://github.com/alloy-rs/chains/releases/tag/v0.1.29) - 2024-08-27
+
+### Features
+
+- Add xai and xai-sepolia ([#85](https://github.com/alloy-rs/chains/issues/85))
+- Add pulsechain ([#84](https://github.com/alloy-rs/chains/issues/84))
+
+### Miscellaneous Tasks
+
+- Release 0.1.29
+
+## [0.1.28](https://github.com/alloy-rs/chains/releases/tag/v0.1.28) - 2024-08-26
+
+### Bug Fixes
+
+- `anvil` reports not supporting `EIP-3855` (Shanghai) ([#83](https://github.com/alloy-rs/chains/issues/83))
+
+### Features
+
+- Add non_exhaustive
+- Add alphanet ([#82](https://github.com/alloy-rs/chains/issues/82))
+- [Chains] Add Etherlink mainnet ([#81](https://github.com/alloy-rs/chains/issues/81))
+
+### Miscellaneous Tasks
+
+- Release 0.1.28
+
+### Other
+
+- Add conflux espace mainnet and testnet ([#80](https://github.com/alloy-rs/chains/issues/80))
+
+## [0.1.27](https://github.com/alloy-rs/chains/releases/tag/v0.1.27) - 2024-08-09
+
+### Bug Fixes
+
+- Zksync etherscan api url ([#78](https://github.com/alloy-rs/chains/issues/78))
+
+### Features
+
+- Add darwinia crab koi ([#77](https://github.com/alloy-rs/chains/issues/77))
+
+### Miscellaneous Tasks
+
+- Release 0.1.27
+
+### Styling
+
+- Fix fmt ([#79](https://github.com/alloy-rs/chains/issues/79))
+
+## [0.1.26](https://github.com/alloy-rs/chains/releases/tag/v0.1.26) - 2024-08-08
+
+### Miscellaneous Tasks
+
+- Release 0.1.26
+
+### Other
+
+- Add acala karura mandala network ([#76](https://github.com/alloy-rs/chains/issues/76))
+
+## [0.1.25](https://github.com/alloy-rs/chains/releases/tag/v0.1.25) - 2024-08-02
+
+### Features
+
+- Add avalanche to the list of chains to support shanghai ([#75](https://github.com/alloy-rs/chains/issues/75))
+
+### Miscellaneous Tasks
+
+- Release 0.1.25
+
+## [0.1.24](https://github.com/alloy-rs/chains/releases/tag/v0.1.24) - 2024-07-30
+
+### Features
+
+- Mark Scroll as non-legacy chain ([#73](https://github.com/alloy-rs/chains/issues/73))
+
+### Miscellaneous Tasks
+
+- Release 0.1.24
+
+### Other
+
+- Updates Mantle + Mantle Testnet configuration ([#74](https://github.com/alloy-rs/chains/issues/74))
+
+## [0.1.23](https://github.com/alloy-rs/chains/releases/tag/v0.1.23) - 2024-06-25
+
+### Miscellaneous Tasks
+
+- Release 0.1.23
+
+### Other
+
+- Flare network support ([#72](https://github.com/alloy-rs/chains/issues/72))
+- Shimmer network support ([#70](https://github.com/alloy-rs/chains/issues/70))
+
+## [0.1.22](https://github.com/alloy-rs/chains/releases/tag/v0.1.22) - 2024-06-21
+
+### Miscellaneous Tasks
+
+- Release 0.1.22
+
+### Other
+
+- Add Autonomys Nova devnet ([#69](https://github.com/alloy-rs/chains/issues/69))
+
+## [0.1.21](https://github.com/alloy-rs/chains/releases/tag/v0.1.21) - 2024-06-18
+
+### Features
+
+- Add Taiko mainnet/testnet ([#68](https://github.com/alloy-rs/chains/issues/68))
+
+### Miscellaneous Tasks
+
+- Release 0.1.21
+
+## [0.1.20](https://github.com/alloy-rs/chains/releases/tag/v0.1.20) - 2024-06-14
+
+### Features
+
+- Add Ronin mainnet ([#67](https://github.com/alloy-rs/chains/issues/67))
+
+### Miscellaneous Tasks
+
+- Release 0.1.20
+
+## [0.1.19](https://github.com/alloy-rs/chains/releases/tag/v0.1.19) - 2024-06-12
+
+### Features
+
+- [chain] Add opBNB mainnet and testnet ([#64](https://github.com/alloy-rs/chains/issues/64))
+
+### Miscellaneous Tasks
+
+- Release 0.1.19
+- Sync cliff.toml
+
+### Other
+
+- Modify kakarot sepolia shanghai support ([#66](https://github.com/alloy-rs/chains/issues/66))
+
 ## [0.1.18](https://github.com/alloy-rs/chains/releases/tag/v0.1.18) - 2024-05-14
 
 ### Bug Fixes
@@ -12,6 +183,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update Amoy testnet endpoints ([#63](https://github.com/alloy-rs/chains/issues/63))
 - Correct Arbiturm blocktime hint  ([#62](https://github.com/alloy-rs/chains/issues/62))
 - Correct Etherscan URLs for Blast Sepolia ([#60](https://github.com/alloy-rs/chains/issues/60))
+
+### Miscellaneous Tasks
+
+- Release 0.1.18
 
 ## [0.1.17](https://github.com/alloy-rs/chains/releases/tag/v0.1.17) - 2024-04-23
 
@@ -33,6 +208,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Features
 
 - Update Scroll chain currency symbol and shanghai readiness ([#56](https://github.com/alloy-rs/chains/issues/56))
+- Add Syndr L3 mainnet ([#54](https://github.com/alloy-rs/chains/issues/54))
 - [chain] Add Etherlink Testnet ([#53](https://github.com/alloy-rs/chains/issues/53))
 - Shanghai support for arbitrum ([#51](https://github.com/alloy-rs/chains/issues/51))
 
@@ -40,10 +216,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Release 0.1.16
 - Clippy
-
-### Other
-
-- Add Syndr L3 mainnet ([#54](https://github.com/alloy-rs/chains/issues/54))
 
 ## [0.1.15](https://github.com/alloy-rs/chains/releases/tag/v0.1.15) - 2024-03-04
 
@@ -89,6 +261,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Features
 
 - Add kakarot sepolia ([#43](https://github.com/alloy-rs/chains/issues/43))
+- Add Syndr Sepolia L3 ([#40](https://github.com/alloy-rs/chains/issues/40))
 
 ### Miscellaneous Tasks
 
@@ -97,7 +270,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Other
 
 - Add 'Linea' and 'LineaGoerli' serde kebab cases aliases ([#42](https://github.com/alloy-rs/chains/issues/42))
-- Add Syndr Sepolia L3 ([#40](https://github.com/alloy-rs/chains/issues/40))
 
 ## [0.1.11](https://github.com/alloy-rs/chains/releases/tag/v0.1.11) - 2024-02-04
 
@@ -126,14 +298,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.10](https://github.com/alloy-rs/chains/releases/tag/v0.1.10) - 2024-01-25
 
+### Features
+
+- Add blast sepolia ([#31](https://github.com/alloy-rs/chains/issues/31))
+
 ### Miscellaneous Tasks
 
 - Release 0.1.10
 - Update changelog and add cliff ([#30](https://github.com/alloy-rs/chains/issues/30))
-
-### Other
-
-- Add blast sepolia ([#31](https://github.com/alloy-rs/chains/issues/31))
 
 ## [0.1.9](https://github.com/alloy-rs/chains/releases/tag/v0.1.9) - 2024-01-12
 

@@ -408,6 +408,72 @@ impl Chain {
         Self::from_named(NamedChain::OpBNBTestnet)
     }
 
+    /// Returns the ronin mainnet chain.
+    #[inline]
+    pub const fn ronin() -> Self {
+        Self::from_named(NamedChain::Ronin)
+    }
+
+    /// Returns the taiko mainnet chain.
+    #[inline]
+    pub const fn taiko() -> Self {
+        Self::from_named(NamedChain::Taiko)
+    }
+
+    /// Returns the taiko hekla chain.
+    #[inline]
+    pub const fn taiko_hekla() -> Self {
+        Self::from_named(NamedChain::TaikoHekla)
+    }
+
+    /// Returns the shimmer testnet chain.
+    #[inline]
+    pub const fn shimmer() -> Self {
+        Self::from_named(NamedChain::Shimmer)
+    }
+
+    /// Returns the flare mainnet chain.
+    #[inline]
+    pub const fn flare() -> Self {
+        Self::from_named(NamedChain::Flare)
+    }
+
+    /// Returns the flare testnet chain.
+    #[inline]
+    pub const fn flare_coston2() -> Self {
+        Self::from_named(NamedChain::FlareCoston2)
+    }
+
+    /// Returns the darwinia mainnet chain.
+    #[inline]
+    pub const fn darwinia() -> Self {
+        Self::from_named(NamedChain::Darwinia)
+    }
+
+    /// Returns the crab mainnet chain.
+    #[inline]
+    pub const fn crab() -> Self {
+        Self::from_named(NamedChain::Crab)
+    }
+
+    /// Returns the koi testnet chain.
+    #[inline]
+    pub const fn koi() -> Self {
+        Self::from_named(NamedChain::Koi)
+    }
+
+    /// Returns the Immutable zkEVM mainnet chain.
+    #[inline]
+    pub const fn immutable() -> Self {
+        Self::from_named(NamedChain::Immutable)
+    }
+
+    /// Returns the Immutable zkEVM testnet chain.
+    #[inline]
+    pub const fn immutable_testnet() -> Self {
+        Self::from_named(NamedChain::ImmutableTestnet)
+    }
+
     /// Returns the kind of this chain.
     #[inline]
     pub const fn kind(&self) -> &ChainKind {
@@ -420,33 +486,16 @@ impl Chain {
         self.0
     }
 
+    /// Returns `true` if this chain is Ethereum or an Ethereum testnet.
+    #[inline]
+    pub const fn is_ethereum(&self) -> bool {
+        matches!(self.named(), Some(named) if named.is_ethereum())
+    }
+
     /// Returns true if the chain contains Optimism configuration.
     #[inline]
     pub const fn is_optimism(self) -> bool {
-        matches!(
-            self.kind(),
-            ChainKind::Named(
-                NamedChain::Optimism
-                    | NamedChain::OptimismGoerli
-                    | NamedChain::OptimismKovan
-                    | NamedChain::OptimismSepolia
-                    | NamedChain::Base
-                    | NamedChain::BaseGoerli
-                    | NamedChain::BaseSepolia
-                    | NamedChain::Fraxtal
-                    | NamedChain::FraxtalTestnet
-                    | NamedChain::Mode
-                    | NamedChain::ModeSepolia
-                    | NamedChain::Pgn
-                    | NamedChain::PgnSepolia
-                    | NamedChain::Zora
-                    | NamedChain::ZoraGoerli
-                    | NamedChain::ZoraSepolia
-                    | NamedChain::BlastSepolia
-                    | NamedChain::OpBNBMainnet
-                    | NamedChain::OpBNBTestnet
-            )
-        )
+        matches!(self.named(), Some(named) if named.is_optimism())
     }
 
     /// Attempts to convert the chain into a named chain.
