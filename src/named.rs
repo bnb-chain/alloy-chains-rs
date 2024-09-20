@@ -612,35 +612,13 @@ impl NamedChain {
 
         match self {
             // Known legacy chains / non EIP-1559 compliant.
-            Acala
-            | AcalaMandalaTestnet
-            | AcalaTestnet
-            | ArbitrumTestnet
-            | BNBSmartChain
-            | BNBSmartChainTestnet
-            | Boba
-            | Celo
-            | CeloAlfajores
-            | CeloBaklava
-            | Elastos
-            | Emerald
-            | EmeraldTestnet
-            | Fantom
-            | FantomTestnet
-            | Karura
-            | KaruraTestnet
-            | MantleTestnet
-            | Metis
-            | Oasis
-            | OptimismKovan
-            | PolygonZkEvm
-            | PolygonZkEvmTestnet
-            | Ronin
-            | Rsk
-            | Shimmer
-            | Viction
-            | ZkSync
-            | ZkSyncTestnet => true,
+            Acala | AcalaMandalaTestnet | AcalaTestnet | ArbitrumTestnet | BNBSmartChain
+            | BNBSmartChainTestnet | Boba | Celo | CeloAlfajores | CeloBaklava | Elastos
+            | Emerald | EmeraldTestnet | Fantom | FantomTestnet | Karura | KaruraTestnet
+            | MantleTestnet | Metis | Oasis | OptimismKovan | PolygonZkEvm
+            | PolygonZkEvmTestnet | Ronin | Rsk | Shimmer | Viction | ZkSync | ZkSyncTestnet => {
+                true
+            }
 
             // Known EIP-1559 chains.
             Mainnet
@@ -862,11 +840,11 @@ impl NamedChain {
 
             // Mainnets.
             Mainnet | Optimism | Arbitrum | ArbitrumNova | Blast | Syndr | Cronos | Rsk
-            | BNBSmartChain | Poa | Sokol | Scroll | Metis | Gnosis | Polygon
-            | PolygonZkEvm | Fantom | Moonbeam | Moonriver | Moonbase | Evmos | Chiado | Oasis
-            | Emerald | FilecoinMainnet | Avalanche | Celo | Aurora | Canto | Boba | Base
-            | Fraxtal | Linea | ZkSync | Mantle | GravityAlphaMainnet | Xai | Zora | Pgn | Mode
-            | Viction | Elastos | Degen | OpBNBMainnet | Ronin | Taiko | Flare | Acala | Karura
+            | BNBSmartChain | Poa | Sokol | Scroll | Metis | Gnosis | Polygon | PolygonZkEvm
+            | Fantom | Moonbeam | Moonriver | Moonbase | Evmos | Chiado | Oasis | Emerald
+            | FilecoinMainnet | Avalanche | Celo | Aurora | Canto | Boba | Base | Fraxtal
+            | Linea | ZkSync | Mantle | GravityAlphaMainnet | Xai | Zora | Pgn | Mode | Viction
+            | Elastos | Degen | OpBNBMainnet | Ronin | Taiko | Flare | Acala | Karura
             | Darwinia | Cfx | Crab | Pulsechain | Etherlink | Immutable => false,
         }
     }
@@ -1232,53 +1210,14 @@ impl NamedChain {
         use NamedChain::*;
 
         let api_key_name = match self {
-            Mainnet
-            | Morden
-            | Ropsten
-            | Kovan
-            | Rinkeby
-            | Goerli
-            | Holesky
-            | Optimism
-            | OptimismGoerli
-            | OptimismKovan
-            | OptimismSepolia
-            | BNBSmartChain
-            | BNBSmartChainTestnet
-            | OpBNBMainnet
-            | OpBNBTestnet
-            | Arbitrum
-            | ArbitrumTestnet
-            | ArbitrumGoerli
-            | ArbitrumSepolia
-            | ArbitrumNova
-            | Syndr
-            | SyndrSepolia
-            | Cronos
-            | CronosTestnet
-            | Aurora
-            | AuroraTestnet
-            | Celo
-            | CeloAlfajores
-            | CeloBaklava
-            | Base
-            | Linea
-            | Mantle
-            | MantleTestnet
-            | MantleSepolia
-            | Xai
-            | XaiSepolia
-            | BaseGoerli
-            | BaseSepolia
-            | Fraxtal
-            | FraxtalTestnet
-            | Blast
-            | BlastSepolia
-            | Gnosis
-            | Scroll
-            | ScrollSepolia
-            | Taiko
-            | TaikoHekla => "ETHERSCAN_API_KEY",
+            Mainnet | Morden | Ropsten | Kovan | Rinkeby | Goerli | Holesky | Optimism
+            | OptimismGoerli | OptimismKovan | OptimismSepolia | BNBSmartChain
+            | BNBSmartChainTestnet | OpBNBMainnet | OpBNBTestnet | Arbitrum | ArbitrumTestnet
+            | ArbitrumGoerli | ArbitrumSepolia | ArbitrumNova | Syndr | SyndrSepolia | Cronos
+            | CronosTestnet | Aurora | AuroraTestnet | Celo | CeloAlfajores | CeloBaklava
+            | Base | Linea | Mantle | MantleTestnet | MantleSepolia | Xai | XaiSepolia
+            | BaseGoerli | BaseSepolia | Fraxtal | FraxtalTestnet | Blast | BlastSepolia
+            | Gnosis | Scroll | ScrollSepolia | Taiko | TaikoHekla => "ETHERSCAN_API_KEY",
 
             Avalanche | AvalancheFuji => "SNOWTRACE_API_KEY",
 
@@ -1425,7 +1364,7 @@ mod tests {
         const ALIASES: &[(NamedChain, &[&str])] = &[
             (Mainnet, &["ethlive"]),
             (BNBSmartChain, &["bsc", "bnb-smart-chain"]),
-            (BNBSmartChainTestnet, &["bsc-testnet", "bnb-smart-chain-chapel"]),
+            (BNBSmartChainTestnet, &["bsc-testnet", "bnb-smart-chain-testnet"]),
             (Gnosis, &["gnosis", "gnosis-chain"]),
             (PolygonMumbai, &["mumbai"]),
             (PolygonZkEvm, &["zkevm", "polygon-zkevm"]),

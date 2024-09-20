@@ -157,7 +157,7 @@
       "etherscanApiKeyName": "BLOCKSCOUT_API_KEY"
     },
     "56": {
-      "internalId": "BinanceSmartChain",
+      "internalId": "BNBSmartChain",
       "name": "bsc",
       "averageBlocktimeHint": 3000,
       "isLegacy": true,
@@ -217,7 +217,7 @@
       "etherscanApiKeyName": null
     },
     "97": {
-      "internalId": "BinanceSmartChainTestnet",
+      "internalId": "BNBSmartChainTestnet",
       "name": "bsc-testnet",
       "averageBlocktimeHint": 3000,
       "isLegacy": true,
